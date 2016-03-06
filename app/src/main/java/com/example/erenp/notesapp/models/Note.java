@@ -43,14 +43,4 @@ public class Note {
     public void setContent(String content) {
         this.Content = content;
     }
-
-    public void toJson() {
-        JSONObject noteToCreate = new JSONObject();
-        try {
-            noteToCreate.put("title", this.Title);
-            noteToCreate.put("content", this.Content);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
 }
